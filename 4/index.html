@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Small Business Console</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Small business</p>
+          <h1>Harbour & Pine Studio</h1>
+        </div>
+        <div class="summary">
+          <span>12 customers</span>
+          <span>7 bookings this week</span>
+          <span>$8,420 net</span>
+        </div>
+      </header>
+
+      <nav class="tabs" aria-label="Workspace sections">
+        <button class="tab active" type="button" data-tab="customers">Customers</button>
+        <button class="tab" type="button" data-tab="schedule">Schedule</button>
+        <button class="tab" type="button" data-tab="ledger">Ledger</button>
+      </nav>
+
+      <section id="customers" class="panel active" aria-labelledby="customers-tab">
+        <div class="panel-header">
+          <div>
+            <h2>Customers</h2>
+            <p>Active client list with status and next action.</p>
+          </div>
+          <button type="button">Add customer</button>
+        </div>
+        <div class="table">
+          <div class="row head">
+            <span>Name</span>
+            <span>Service</span>
+            <span>Status</span>
+            <span>Next step</span>
+          </div>
+          <div class="row">
+            <span>Maya Thompson</span>
+            <span>Brand refresh</span>
+            <span><mark class="green">Active</mark></span>
+            <span>Send proposal</span>
+          </div>
+          <div class="row">
+            <span>Northline Cafe</span>
+            <span>Monthly content</span>
+            <span><mark class="blue">Retainer</mark></span>
+            <span>Review calendar</span>
+          </div>
+          <div class="row">
+            <span>Owen Carter</span>
+            <span>Website audit</span>
+            <span><mark class="amber">Waiting</mark></span>
+            <span>Confirm assets</span>
+          </div>
+          <div class="row">
+            <span>Bright Path Yoga</span>
+            <span>Booking setup</span>
+            <span><mark class="green">Active</mark></span>
+            <span>Schedule training</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="schedule" class="panel" aria-labelledby="schedule-tab">
+        <div class="panel-header">
+          <div>
+            <h2>Schedule</h2>
+            <p>Bookings and calendar slots for the week.</p>
+          </div>
+          <button type="button">New booking</button>
+        </div>
+        <div class="calendar">
+          <article>
+            <strong>Mon</strong>
+            <span>10:00 Brand kickoff</span>
+            <span>14:30 Content review</span>
+          </article>
+          <article>
+            <strong>Tue</strong>
+            <span>09:30 Website audit</span>
+            <span>15:00 Intake call</span>
+          </article>
+          <article>
+            <strong>Wed</strong>
+            <span>11:00 Proposal review</span>
+          </article>
+          <article>
+            <strong>Thu</strong>
+            <span>13:00 Client training</span>
+            <span>16:30 Follow-up block</span>
+          </article>
+          <article>
+            <strong>Fri</strong>
+            <span>10:30 Finance admin</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="ledger" class="panel" aria-labelledby="ledger-tab">
+        <div class="panel-header">
+          <div>
+            <h2>Ledger</h2>
+            <p>Recent invoices, payments, and operating expenses.</p>
+          </div>
+          <button type="button">Record transaction</button>
+        </div>
+        <div class="table">
+          <div class="row head">
+            <span>Date</span>
+            <span>Description</span>
+            <span>Category</span>
+            <span>Amount</span>
+          </div>
+          <div class="row">
+            <span>Jun 14</span>
+            <span>Northline Cafe retainer</span>
+            <span>Income</span>
+            <span class="money positive">+$2,400</span>
+          </div>
+          <div class="row">
+            <span>Jun 13</span>
+            <span>Design software</span>
+            <span>Tools</span>
+            <span class="money negative">-$89</span>
+          </div>
+          <div class="row">
+            <span>Jun 12</span>
+            <span>Maya Thompson deposit</span>
+            <span>Income</span>
+            <span class="money positive">+$1,800</span>
+          </div>
+          <div class="row">
+            <span>Jun 10</span>
+            <span>Contractor editing</span>
+            <span>Cost of sales</span>
+            <span class="money negative">-$520</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>

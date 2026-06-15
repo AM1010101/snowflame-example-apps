@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Single File HTML</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        font-family: Inter, system-ui, sans-serif;
+        background: #f8fafc;
+        color: #111827;
+      }
+
+      main {
+        width: min(520px, calc(100vw - 32px));
+        border: 1px solid #d1d5db;
+        background: white;
+        padding: 24px;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: 28px;
+      }
+
+      p {
+        margin: 0;
+        color: #4b5563;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Single file HTML</h1>
+      <p>This app is one static file and can be served directly from the workspace filesystem.</p>
+    </main>
+  </body>
+</html>
